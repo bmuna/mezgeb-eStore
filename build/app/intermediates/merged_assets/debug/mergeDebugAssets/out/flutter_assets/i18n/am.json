@@ -1,0 +1,108 @@
+{
+  "homePageBig": "ፋሽን",
+  "homePageBigNext": "ቅናሽ",
+  "checkButton": "ይመልከቱ",
+  "new": "አዲስ",
+  "sale": "ቅናሽ",
+  "viewAll": "ሁሉንም ይመልከቱ",
+  "home": "ቤት",
+  "shop": "ሱቅ",
+  "cart": "ቅርጫት",
+  "profile": "መግለጫ",
+  "cartTextHeader": "ቅርጫትዎ ባዶ ነው!",
+  "size": "መጠን",
+  "color": "ቀለም",
+  "addToCartButton": "ቅርጫት ውስጥ ይጨምሩ",
+  "showMore": "ተጨማሪ አሳይ",
+  "showLess": "ያነሰ አሳይ",
+  "colorSnackBarText": "እባክዎ ካሉት ቀለሞች ውስጥ አንዱን ይምረጡ!!",
+  "sizeSnackBarText": "እባክዎ ካሉት መጠኖች ውስጥ አንዱን ይምረጡ!!",
+  "alertBoxHeader": "ግዢዎን ሊፈጽሙ ነው!!",
+  "alertBoxSubHeader": "እቃዎን መግዛት ወይም ግብይትዎን መቀጠል ይችላሉ",
+  "alertBoxCheckOutButton": "ግዛ",
+  "alertBoxContinueShoppingButton": "ግብይቶን ይቀጥሉ",
+  "nextButtonInSignPage": "ቀጥል",
+  "verificationPageText": "ወደ ቁጥርዎ የተላከውን የባለ 6 አሃዝ ማረጋገጫ ኮድ ያስገቡ",
+  "confirmButtonText": "አረጋግጥ",
+  "invalid Code/invalid authentication": "ልክ ያልሆነ ኮድ / ልክ ያልሆነ ማረጋገጫ",
+  "invalid Code/invalid authentication2": "የሆነ ነገር ተሳስቷል ፣ እባክዎ ትንሽ ቆይተው ይሞክሩ",
+  "internetError": "ስልክ ቁጥሮ የተሳሳተ ነው። እባክዎ ቁጥርዎን [ቁጥር] ያስገቡ ወይም የበይነመረብ(ኢንተርኔት) ግንኙነትዎን ያረጋግጡ",
+  "wrongCode": "የተሳሳተ ኮድ! እባክዎ የተቀበሉትን የመጨረሻ ኮድ ያስገቡ።",
+  "phoneNotEntered": "እባክዎ የስልክ ቁጥር ያስገቡ",
+  "deleteCartText": "ሰርዝ",
+  "sizeCartText": "መጠን:",
+  "colorCartText": "ቀለም:",
+  "totalAmountText": "አጠቃላይ ድምሩ:",
+  "myProfile": "መግለጫ",
+  "fullName": "ሙሉ ስም",
+  "editProfile": "አስተካክል",
+  "myOrder": "ትእዛዞቼ",
+  "12Order": "12 ትዕዛዞች አሉዎት",
+  "shippingAddress": "የመላኪያ አድራሻ",
+  "address": " አድራሻ",
+  "settings": "ማስተካከያዎች",
+  "name,phoneNumber": "ስም, ስልክ-ቁጥር",
+  "delivered": "ደርሷል",
+  "processing": "በሂደት ላይ",
+  "cancelled": "ተሰርዟል",
+  "general": "አጠቃላይ",
+  "shareApp": "የመዝገብ ኢስቶር መተግበሪያን ያጋሩ",
+  "privatePolicy": "የግል ፖሊሲ",
+  "copyrightPolicy": "የቅጂ መብት ፖሊሲ",
+  "logout": "ውጣ",
+  "preference": "ማስታወቂያ",
+  "theme": "የምሽት ሞድ",
+  "language": "ቋንቋ",
+  "feedback": "አስተያየት",
+  "rateUs": "ደረጃ ይስጡን",
+  "followUs": "ይከተሉን",
+  "version": "መተግበሪያ ስሪት 1.0.0",
+  "cancel": "ሰርዝ",
+  "continue": "ቀጥል",
+  "logoutFromMezgeb": "ከመዝገብ ኢስቶር መተግበሪያ ውጣ?",
+  "upload": "ጫን",
+  "successful": "በተሳካ ሁኔታ ተጭኗል",
+  "copied": "ተቀድቷል!!",
+  "choosePaymentTitle": "የክፍያ አማራጭ ይምረጡ",
+  "delete": "ተሰርዟል!!",
+  "editYourAddress": "አድራሻዎን ያስተካክሉ",
+  "place": "ቦታ፡",
+  "phone": "ስልክ ቁ.፡",
+  "addressEditYourAddress": "አድራሻ፡",
+  "describeYourPlace": "ቦታዎን ይግለጹ",
+  "addressName": "የአድራሻ ስም",
+  "phoneEditAddressPage": "ስልክ ቁጥር",
+  "edit": "አስተካክል",
+  "cashOnDelivery": "እጅ በእጅ",
+  "mobileBanking": "ሞባይል ባንኪንግ",
+  "cashOnDeliveryMessage": "እቃዎ ያለምንም እንከን በፍጥነት እንዲደርሶ እባክዎ ለትእዛዝዎ አስፈላጊውን የገንዘብ መጠን አስቀድመው ያዘጋጁ",
+  "mobileBankingMessage": "በሞባይል ክፍያ በኩል ለመክፈል እባክዎ ከዚህ በታች “እዘዝ” ላይ ጠቅ ያድርጉ እና ለትእዛዝዎ ጠቅላላ ድምር በተቻለ ፍጥነት ከዚህ ከተዘረዘሩ ባንኮች መሃከል በአንዱ ይላኩ",
+  "placeYourOrder": "እዘዝ",
+  "shipping": "የመላኪያ አድራሻ",
+  "emptyShipping": "የመላኪያ አድራሻ ባዶ ነው!",
+  "order": "እዘዝ",
+  "newShippingAddress": "አዲስ የመላኪያ አድራሻ",
+  "hintDescribePlace": "ለምሳሌ፦ ኤድና ሞል 5ተኛ ፎቅ",
+  "hintAddressName": "ለምሳሌ፦ መኖሪያ ቤት፣ ቢሮ፣ ወዘተ..",
+  "hintPhone": "ለምሳሌ፦ 0900000000",
+  "saveAddress": "መዝግብ",
+  "phone2": "ስልክ ቁጥር"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
