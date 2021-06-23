@@ -1,13 +1,13 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:mezgebestore/models/data.dart';
+import 'package:intl/intl.dart';
+import 'package:mezgebestore/models/check_out.dart';
 import 'package:mezgebestore/pages/detail.dart';
 
-List<Data> _searchList = List();
-
 class Shop extends StatefulWidget {
-  static const String id = 'shop2_screen';
+  static const String id = 'shop_screen';
   const Shop({Key key}) : super(key: key);
   @override
   _ShopState createState() => _ShopState();
@@ -22,9 +22,10 @@ class _ShopState extends State<Shop> {
     Icons.search,
     color: Colors.white,
   );
+  List<CheckOutData> _searchList = List();
   final key = GlobalKey<ScaffoldState>();
   final TextEditingController _searchQuery = TextEditingController();
-  List<Data> _list;
+  List<CheckOutData> _list;
   final databaseReference = Firestore.instance;
   bool _IsSearching;
   String _searchText = "";
@@ -51,19 +52,18 @@ class _ShopState extends State<Shop> {
   }
 
   void getData() async {
-    await for (var messages
-        in databaseReference.collection("shop").snapshots()) {
-      for (var message in messages.documents) {
-        Data hold = Data(
-          imgUrl: message.data['image'],
-          price: message.data['newPrice'],
-          brand: message.data['brand'],
-          type: message.data['type'],
-          description: message.data['description'],
-          size: message.data['size'],
-          color: message.data['color'],
-          oldPrice: message.data['oldPrice'],
-        );
+    await for (var items in databaseReference.collection("shop").snapshots()) {
+      for (var item in items.documents) {
+        CheckOutData hold = CheckOutData(
+            id: item.data['id'],
+            imgUrl: item.data['image'],
+            newPrice: item.data['newPrice'],
+            brand: item.data['brand'],
+            description: item.data['description'],
+            size: item.data['size'],
+            color: item.data['color'],
+            oldPrice: item.data['oldPrice'],
+            category: item.data["category"]);
         _list.add(hold);
       }
       setState(() {});
@@ -71,9 +71,15 @@ class _ShopState extends State<Shop> {
     }
   }
 
-  navigateToDetail(Data post) {
+  navigateToDetail(CheckOutData post) {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => Detail(post: post)));
+      context,
+      MaterialPageRoute(
+        builder: (context) => Detail(
+          product: post,
+        ),
+      ),
+    );
   }
 
   @override
@@ -85,15 +91,17 @@ class _ShopState extends State<Shop> {
     _IsSearching = false;
   }
 
-  List<Data> _buildSearchList() {
+  List<CheckOutData> _buildSearchList() {
     if (_searchText.isEmpty) {
       return _searchList = _list;
     } else {
       _searchList = _list
           .where((element) =>
               element.brand.toLowerCase().contains(_searchText.toLowerCase()) ||
-              element.price.toLowerCase().contains(_searchText.toLowerCase()) ||
-              element.type.toLowerCase().contains(_searchText.toLowerCase()))
+              (element.newPrice).toString().contains(_searchText) ||
+              element.category
+                  .toLowerCase()
+                  .contains(_searchText.toLowerCase()))
           .toList();
       print('${_searchList.length}');
       return _searchList;
@@ -174,92 +182,92 @@ class _ShopState extends State<Shop> {
 
   @override
   Widget build(BuildContext context) {
+    final NumberFormat toCurrency = NumberFormat("#,##0", "en_US");
+
     //SizeConfig().init(context);
     return Scaffold(
-      key: key,
-      appBar: buildBar(context),
-      body: StreamBuilder(
-        stream: Firestore.instance.collection("shop").snapshots(),
-        builder: (BuildContext context, AsyncSnapshot snapshot) {
-          if (!snapshot.hasData) {
-            return Center(child: CircularProgressIndicator());
-          } else {
-            return GridView.builder(
-              scrollDirection: Axis.vertical,
-              itemCount: _searchList.length,
-              itemBuilder: (context, index) {
-                return Column(
-                  children: <Widget>[
-                    Container(
-                      child: Expanded(
-                        child: GestureDetector(
-                          onTap: () {
-                            navigateToDetail(_searchList[index]);
-                          },
-                          child: Card(
-                            clipBehavior: Clip.antiAliasWithSaveLayer,
-                            child: Image(
-                              fit: BoxFit.fill,
-                              image: NetworkImage(_searchList[index].imgUrl[0]),
-                            ),
+        key: key,
+        appBar: buildBar(context),
+        body: GridView.builder(
+          scrollDirection: Axis.vertical,
+          itemCount: _searchList.length,
+          itemBuilder: (context, index) {
+            return Column(
+              children: <Widget>[
+                Container(
+                  child: Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        navigateToDetail(_searchList[index]);
+                      },
+                      child: Card(
+                        clipBehavior: Clip.antiAlias,
+                        child: CachedNetworkImage(
+                          height: 128,
+                          placeholder: (context, url) => Container(
+                            height: 128,
+                            alignment: Alignment.center,
+                            child: CircularProgressIndicator(),
                           ),
+                          errorWidget: (context, url, error) => Container(
+                            height: 128,
+                            child: Icon(Icons.error),
+                          ),
+                          imageUrl: _searchList[index].imgUrl[0],
+                          fit: BoxFit.fill,
                         ),
                       ),
                     ),
-                    Container(
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                  ),
+                ),
+                Container(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          _searchList[index].category,
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        Text(
+                          _searchList[index].brand,
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        Row(
                           children: <Widget>[
                             Text(
-                              _searchList[index].type,
+                              toCurrency.format(_searchList[index].newPrice),
                               style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                              ),
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              width: 5,
                             ),
                             Text(
-                              _searchList[index].brand,
+                              'ETB',
                               style: TextStyle(
-                                color: Colors.grey,
-                              ),
-                            ),
-                            Row(
-                              children: <Widget>[
-                                Text(
-                                  _searchList[index].price,
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Text(
-                                  'ETB',
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ],
+                                  fontSize: 20, fontWeight: FontWeight.bold),
                             ),
                           ],
                         ),
-                      ),
-                    )
+                      ],
+                    ),
+                  ),
+                )
 //
-                  ],
-                );
-              },
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                childAspectRatio: 0.7,
-              ),
+              ],
             );
-          }
-        },
-      ),
-    );
+          },
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: 0.7,
+          ),
+        ));
   }
 }

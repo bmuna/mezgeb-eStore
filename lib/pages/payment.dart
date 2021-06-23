@@ -1,11 +1,19 @@
 import 'dart:ui';
+import 'package:auto_size_text/auto_size_text.dart';
+import 'package:connectivity_wrapper/connectivity_wrapper.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:mezgebestore/language/app_localization.dart';
+import 'package:mezgebestore/pages/navbar_controller.dart';
 import 'package:mezgebestore/pages/shipping.dart';
-import 'package:mezgebestore/main_button.dart';
+import 'package:mezgebestore/stores/size_config.dart';
+import 'package:mezgebestore/widgets/main_button.dart';
+import 'package:mezgebestore/widgets/mobile_banking.dart';
+import 'package:mezgebestore/widgets/mobile_banking_cart.dart';
 
 class PaymentPage extends StatefulWidget {
+  static const String id = 'payment_screen';
   List order;
   PaymentPage({this.order});
   @override
@@ -27,266 +35,257 @@ class _PaymentState extends State<PaymentPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        bottomOpacity: 0.0,
-        elevation: 0.0,
-        centerTitle: true,
-        title: Text('Choose Payment Option'),
-        leading: IconButton(
-          icon: Icon(FontAwesomeIcons.arrowLeft),
-          iconSize: 18,
-          color: Colors.white,
-          onPressed: () {
-            Navigator.pop(context);
-            Navigator.pop(context);
-          },
-        ),
+    final key = new GlobalKey<ScaffoldState>();
+    return ConnectivityWidgetWrapper(
+      height: 4.6 * SizeConfig.heightMultiplier,
+      color: Color(0xffEF3651),
+      message: "Please check your internet connection!!",
+      messageStyle: TextStyle(
+        fontFamily: "Inter",
+        color: Colors.white,
+        fontSize: 2 * SizeConfig.textMultiplier,
+        decoration: TextDecoration.none,
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(10.0),
+      child: Scaffold(
+        key: key,
+        appBar: AppBar(
+          backgroundColor: Theme.of(context).primaryColor,
+          bottomOpacity: 1,
+          elevation: 3.0,
+          centerTitle: true,
+          title: Text(
+            AppLocalizations.of(context).translate('choosePaymentTitle'),
+            style: Theme.of(context).textTheme.bodyText1.merge(
+                  TextStyle(
+                    fontSize: 2.8 * SizeConfig.textMultiplier,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+          ),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back_ios),
+            iconSize: 2.6 * SizeConfig.heightMultiplier,
+            color: Theme.of(context).indicatorColor,
+            onPressed: () {
+              Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(
+                      builder: (_) => BottomNavigationBarController(
+                            selectedIndex: 2,
+                          )),
+                  (Route<dynamic> route) => false);
+            },
+          ),
+        ),
+        body: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(
+                      1.5 * SizeConfig.heightMultiplier,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
 //                  Text('Select payment option'),
-                  Row(
-                    children: <Widget>[
-                      Expanded(
-                        child: GestureDetector(
-                          child: Stack(
-                            alignment: Alignment.bottomCenter,
-                            children: <Widget>[
-                              Card(
-                                color: selected == 'first'
-                                    ? Colors.red
-                                    : Colors.white,
-                                clipBehavior: Clip.antiAliasWithSaveLayer,
-                                child:
-                                    Image.asset('images/cash.png', height: 180),
-                              ),
-                              Container(
-                                width: double.maxFinite,
-                                color: Colors.black.withOpacity(0.7),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(10.0),
-                                  child: Text('Cash on delivery',
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.bold)),
-                                ),
-                              ),
-                            ],
-                          ),
-                          onTap: () {
-                            setState(() {
-                              selected = 'first';
-                            });
-                          },
-                        ),
-                      ),
-                      SizedBox(
-                        width: 5.0,
-                      ),
-                      Expanded(
-                        child: Container(
-                          child: GestureDetector(
-                            child: Stack(
-                              alignment: Alignment.bottomCenter,
-                              children: <Widget>[
-                                Card(
-                                  color: selected == 'second'
-                                      ? Colors.red
-                                      : Colors.white,
-                                  clipBehavior: Clip.antiAliasWithSaveLayer,
-                                  child: Image.asset(
-                                    'images/mobile.png',
-                                    height: 180,
-                                  ),
-                                ),
-                                Container(
-                                  width: double.maxFinite,
-                                  color: Colors.black.withOpacity(0.7),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Text(
-                                      'Mobile banking',
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            onTap: () {
-                              setState(() {
-                                selected = 'second';
-                              });
-                            },
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  selected == 'first'
-                      ? Column(
+                        Row(
                           children: <Widget>[
-                            Text(
-                              'Cash on Delivery',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold),
+                            Expanded(
+                              child: GestureDetector(
+                                child: Stack(
+                                  alignment: Alignment.bottomCenter,
+                                  children: <Widget>[
+                                    Card(
+                                      color: selected == 'first'
+                                          ? Colors.red
+                                          : Colors.white,
+                                      clipBehavior: Clip.antiAliasWithSaveLayer,
+                                      child: Image.asset(
+                                        'images/cash.png',
+                                        height:
+                                            28 * SizeConfig.heightMultiplier,
+                                      ),
+                                    ),
+                                    Container(
+                                      width: double.maxFinite,
+                                      color: Colors.black.withOpacity(0.7),
+                                      child: Padding(
+                                        padding: EdgeInsets.all(
+                                          1.5 * SizeConfig.heightMultiplier,
+                                        ),
+                                        child: Text(
+                                          AppLocalizations.of(context)
+                                              .translate("cashOnDelivery"),
+                                          style: TextStyle(
+                                            fontSize: 2.6 *
+                                                SizeConfig.heightMultiplier,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+//                                        maxLines: 1,
+//                                        minFontSize:
+//                                            2 * SizeConfig.textMultiplier,
+//                                        stepGranularity:
+//                                            2 * SizeConfig.textMultiplier,
+//                                        overflow: TextOverflow.ellipsis,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                onTap: () {
+                                  setState(() {
+                                    selected = 'first';
+                                  });
+                                },
+                              ),
                             ),
-                            SizedBox(
-                              height: 20,
+                            SizedBox(width: 1.3 * SizeConfig.widthMultiplier),
+                            Expanded(
+                              child: Container(
+                                child: GestureDetector(
+                                  child: Stack(
+                                    alignment: Alignment.bottomCenter,
+                                    children: <Widget>[
+                                      Card(
+                                        color: selected == 'second'
+                                            ? Colors.red
+                                            : Colors.white,
+                                        clipBehavior:
+                                            Clip.antiAliasWithSaveLayer,
+                                        child: Image.asset(
+                                          'images/mobile.png',
+                                          height:
+                                              28 * SizeConfig.heightMultiplier,
+                                        ),
+                                      ),
+                                      Container(
+                                        width: double.maxFinite,
+                                        color: Colors.black.withOpacity(0.7),
+                                        child: Padding(
+                                          padding: EdgeInsets.all(1.5 *
+                                              SizeConfig.heightMultiplier),
+                                          child: Text(
+                                            AppLocalizations.of(context)
+                                                .translate("mobileBanking"),
+                                            style: TextStyle(
+                                              fontSize: 2.6 *
+                                                  SizeConfig.heightMultiplier,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+//                                          maxLines: 1,
+//                                          minFontSize:
+//                                              2 * SizeConfig.textMultiplier,
+//                                          stepGranularity:
+//                                              2 * SizeConfig.textMultiplier,
+//                                          overflow: TextOverflow.ellipsis,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  onTap: () {
+                                    setState(() {
+                                      selected = 'second';
+                                    });
+                                  },
+                                ),
+                              ),
                             ),
-                            Text('Please prepare the necessary amount of'
-                                ' cash for your order in advance so '
-                                'that your delivery is quick and seamless.'
-                                ' Drivers may not always have exact change.'),
                           ],
-                        )
-                      : Column(
-                          children: <Widget>[
-                            Text(
-                              'Mobile Banking',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                            SizedBox(
-                              height: 20,
-                            ),
-                            Text('To pay via mobile payment, '
-                                'please click on "Check Out"'
-                                ' below and send the grand total '
-                                'for your order to one of the following '
-                                'supported banks below as soon as possible.'),
-                            SizedBox(
-                              height: 20,
-                            ),
-//                            a(),
-//                            SizedBox(
-//                              height: 30,
-//                            ),
-                            Card(
-                              color: Color(
-                                0xff2A2C36,
-                              ),
-                              child: Column(
+                        ),
+                        SizedBox(
+                          height: 3.1 * SizeConfig.heightMultiplier,
+                        ),
+                        selected == 'first'
+                            ? Column(
                                 children: <Widget>[
-                                  ExpansionTile(
-                                    leading: Image.asset(
-                                      'images/dashen.png',
-                                      height: 50,
-                                    ),
-                                    title: Text('Dashen Bank'),
-                                    children: <Widget>[
-                                      ListTile(
-                                        title: Text('Account name'),
-                                        trailing: Text('Tefer PLC',
-                                            style:
-                                                TextStyle(color: Colors.black)),
-                                      ),
-                                      ListTile(
-                                        title: Text('Account Number'),
-                                        trailing: Text(
-                                          '2331314',
-                                          style: TextStyle(color: Colors.black),
+                                  Text(
+                                    AppLocalizations.of(context)
+                                        .translate("cashOnDelivery"),
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .bodyText1
+                                        .merge(
+                                          TextStyle(
+                                            fontSize: 2.6 *
+                                                SizeConfig.heightMultiplier,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      )
-                                    ],
                                   ),
-                                  ExpansionTile(
-                                    leading: Image.asset(
-                                      'images/cbe.jpg',
-                                      height: 50,
-                                    ),
-                                    title: Text('CBE Bank'),
-                                    children: <Widget>[
-                                      ListTile(
-                                        title: Text('Account name'),
-                                        trailing: Text('Tefer PLC',
-                                            style:
-                                                TextStyle(color: Colors.black)),
-                                      ),
-                                      ListTile(
-                                        title: Text('Account Number'),
-                                        trailing: Text(
-                                          '2331314',
-                                          style: TextStyle(color: Colors.black),
-                                        ),
-                                      )
-                                    ],
+                                  SizedBox(
+                                    height: 3.1 * SizeConfig.heightMultiplier,
                                   ),
-                                  ExpansionTile(
-                                    leading: Image.asset(
-                                      'images/cbir.png',
-                                      height: 50,
-                                    ),
-                                    title: Text('CBE birr'),
-                                    children: <Widget>[
-                                      ListTile(
-                                        title: Text('Account name'),
-                                        trailing: Text('Tefer PLC',
-                                            style:
-                                                TextStyle(color: Colors.black)),
-                                      ),
-                                      ListTile(
-                                        title: Text('Account Number'),
-                                        trailing: Text(
-                                          '2331314',
-                                          style: TextStyle(color: Colors.black),
+                                  Text(
+                                    AppLocalizations.of(context)
+                                        .translate("cashOnDeliveryMessage"),
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .bodyText1
+                                        .merge(
+                                          TextStyle(
+                                            fontSize: 2.1 *
+                                                SizeConfig.heightMultiplier,
+                                          ),
                                         ),
-                                      )
-                                    ],
-                                  ),
-                                  ExpansionTile(
-                                    leading: Image.asset(
-                                      'images/amole.png',
-                                      height: 50,
-                                    ),
-                                    title: Text('Amole'),
-                                    children: <Widget>[
-                                      ListTile(
-                                        title: Text('Account name'),
-                                        trailing: Text('Tefer PLC',
-                                            style:
-                                                TextStyle(color: Colors.black)),
-                                      ),
-                                      ListTile(
-                                        title: Text('Account Number'),
-                                        trailing: Text(
-                                          '2331314',
-                                          style: TextStyle(color: Colors.black),
-                                        ),
-                                      )
-                                    ],
                                   ),
                                 ],
+                              )
+                            : Column(
+                                children: <Widget>[
+                                  Text(
+                                    AppLocalizations.of(context)
+                                        .translate("mobileBanking"),
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .bodyText1
+                                        .merge(
+                                          TextStyle(
+                                            fontSize: 2.6 *
+                                                SizeConfig.heightMultiplier,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                  ),
+                                  SizedBox(
+                                    height: 3.1 * SizeConfig.heightMultiplier,
+                                  ),
+                                  Text(
+                                    AppLocalizations.of(context)
+                                        .translate("mobileBankingMessage"),
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .bodyText1
+                                        .merge(
+                                          TextStyle(
+                                            fontSize: 2.1 *
+                                                SizeConfig.heightMultiplier,
+                                          ),
+                                        ),
+                                  ),
+                                  SizedBox(
+                                    height: 3.1 * SizeConfig.heightMultiplier,
+                                  ),
+                                  MobileBankingCart()
+//                                MobileBanking()
+                                ],
                               ),
-                            )
-                          ],
-                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
-              selected == 'first'
+              selected == 'second'
                   ? Padding(
-                      padding: const EdgeInsets.only(top: 150),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 2.7 * SizeConfig.widthMultiplier,
+                        vertical: 3.1 * SizeConfig.heightMultiplier,
+                      ),
                       child: MainButton(
-                        text: 'Place your order',
+                        text: AppLocalizations.of(context)
+                            .translate("placeYourOrder"),
                         onPressed: () {
                           Navigator.of(context).pushAndRemoveUntil(
                               MaterialPageRoute(
@@ -296,16 +295,30 @@ class _PaymentState extends State<PaymentPage> {
                         },
                       ),
                     )
-                  : Padding(
-                      padding: const EdgeInsets.only(top: 20, bottom: 20),
-                      child: MainButton(
-                        text: 'Place your order',
-                        onPressed: () {},
-                      ),
-                    ),
+                  : Container()
             ],
           ),
         ),
+        bottomNavigationBar: selected == 'first'
+            ? Container(
+                child: Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 2.7 * SizeConfig.widthMultiplier,
+                  ),
+                  child: MainButton(
+                    text: AppLocalizations.of(context)
+                        .translate("placeYourOrder"),
+                    onPressed: () {
+                      Navigator.of(context).pushAndRemoveUntil(
+                          MaterialPageRoute(
+                            builder: (_) => Shipping(order: widget.order),
+                          ),
+                          (Route<dynamic> route) => false);
+                    },
+                  ),
+                ),
+              )
+            : null,
       ),
     );
   }

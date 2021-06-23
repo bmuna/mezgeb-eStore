@@ -5,9 +5,23 @@ import 'package:mezgebestore/pages/login_page.dart';
 import 'package:mezgebestore/stores/login_store.dart';
 
 class SplashControl extends StatefulWidget {
+  final String brand, price, type, description, newPrice;
+  final List size, color, imgUrl;
+  final int quantity;
   static const String id = 'splash_control_screen';
 
-  const SplashControl({Key key}) : super(key: key);
+  const SplashControl(
+      {Key key,
+      this.brand,
+      this.color,
+      this.description,
+      this.imgUrl,
+      this.newPrice,
+      this.price,
+      this.size,
+      this.type,
+      this.quantity})
+      : super(key: key);
   @override
   _SplashControlState createState() => _SplashControlState();
 }
@@ -33,7 +47,9 @@ class _SplashControlState extends State<SplashControl> {
 //        print('address: ${CreateAddress().userId}');
       } else {
         Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(builder: (_) => const LoginPage()),
+            MaterialPageRoute(
+              builder: (_) => const LoginPage(),
+            ),
             (Route<dynamic> route) => false);
       }
     });

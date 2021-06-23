@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:mezgebestore/register_button.dart';
+import 'package:mezgebestore/language/app_localization.dart';
+import 'package:mezgebestore/stores/size_config.dart';
+import 'package:mezgebestore/widgets/main_button.dart';
+import 'file:///C:/Users/Munation/Documents/flutter_project/mezgeb_estore/lib/widgets/register_button.dart';
 import 'package:numeric_keyboard/numeric_keyboard.dart';
 import 'package:provider/provider.dart';
 import 'package:mezgebestore/stores/login_store.dart';
@@ -26,11 +29,12 @@ class _OtpPageState extends State<OtpPage> {
   Widget otpNumberWidget(int position) {
     try {
       return Container(
-        height: 40,
-        width: 40,
+        height: 6.2 * SizeConfig.heightMultiplier,
+        width: 11 * SizeConfig.widthMultiplier,
         decoration: BoxDecoration(
             border: Border.all(color: const Color(0xffEF3651), width: 0),
-            borderRadius: const BorderRadius.all(Radius.circular(8))),
+            borderRadius: BorderRadius.all(
+                Radius.circular(1.2 * SizeConfig.heightMultiplier))),
         child: Center(
             child: Text(
           text[position],
@@ -39,11 +43,12 @@ class _OtpPageState extends State<OtpPage> {
       );
     } catch (e) {
       return Container(
-        height: 40,
-        width: 40,
+        height: 6.2 * SizeConfig.heightMultiplier,
+        width: 11 * SizeConfig.widthMultiplier,
         decoration: BoxDecoration(
             border: Border.all(color: Colors.grey, width: 0),
-            borderRadius: const BorderRadius.all(Radius.circular(8))),
+            borderRadius: BorderRadius.all(
+                Radius.circular(1.2 * SizeConfig.heightMultiplier))),
       );
     }
   }
@@ -63,15 +68,19 @@ class _OtpPageState extends State<OtpPage> {
                 elevation: 0.0,
                 leading: IconButton(
                   icon: Container(
-                    padding: const EdgeInsets.all(10),
+                    padding: EdgeInsets.all(1.5 * SizeConfig.heightMultiplier),
                     decoration: BoxDecoration(
-                      borderRadius: const BorderRadius.all(Radius.circular(20)),
+                      borderRadius: BorderRadius.all(
+                          Radius.circular(3.1 * SizeConfig.heightMultiplier)),
                       color: Color(0xffF47B8D).withAlpha(20),
                     ),
-                    child: Icon(
-                      Icons.arrow_back_ios,
-                      color: const Color(0xffEF3651),
-                      size: 16,
+                    child: IconButton(
+                      icon: Icon(Icons.arrow_back_ios),
+                      iconSize: 2.8 * SizeConfig.heightMultiplier,
+                      color: Theme.of(context).indicatorColor,
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
                     ),
                   ),
                   onPressed: () => Navigator.of(context).pop(),
@@ -91,18 +100,22 @@ class _OtpPageState extends State<OtpPage> {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: <Widget>[
                                 Container(
-                                    margin: const EdgeInsets.symmetric(
-                                        horizontal: 20),
+                                    margin: EdgeInsets.symmetric(
+                                        horizontal:
+                                            5.5 * SizeConfig.widthMultiplier),
                                     child: Text(
-                                        'Enter 6 digits verification code sent to your number',
+                                        AppLocalizations.of(context)
+                                            .translate('verificationPageText'),
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                             color: Colors.white,
-                                            fontSize: 20,
+                                            fontSize: 3.1 *
+                                                SizeConfig.heightMultiplier,
                                             fontWeight: FontWeight.w500))),
                                 Container(
-                                  constraints:
-                                      const BoxConstraints(maxWidth: 500),
+                                  constraints: BoxConstraints(
+                                      maxWidth:
+                                          78 * SizeConfig.heightMultiplier),
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
@@ -122,16 +135,19 @@ class _OtpPageState extends State<OtpPage> {
                             ),
                           ),
                           Container(
-                            margin: const EdgeInsets.symmetric(
-                                horizontal: 20, vertical: 10),
-                            constraints: const BoxConstraints(maxWidth: 500),
+                            margin: EdgeInsets.symmetric(
+                                horizontal: 5.5 * SizeConfig.widthMultiplier,
+                                vertical: 1.5 * SizeConfig.heightMultiplier),
+                            constraints: BoxConstraints(
+                                maxWidth: 78 * SizeConfig.heightMultiplier),
 
-                            child: RegisterButton(
+                            child: MainButton(
                               onPressed: () {
                                 loginStore.validateOtpAndLogin(
                                     context, text, widget.phone);
                               },
-                              text: 'Confirm',
+                              text: AppLocalizations.of(context)
+                                  .translate('confirmButtonText'),
                             ),
 //                            child: RaisedButton(
 //                              onPressed: () {
