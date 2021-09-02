@@ -37,14 +37,6 @@ class _SplashState extends State<Splash> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(color: Color(0xffEF3651)
-//          gradient: LinearGradient(
-//            begin: Alignment.topCenter,
-//            end: Alignment.bottomCenter,
-//            colors: [
-//              Color(0xffEF3651),
-//              Color(0xff9D2F66),
-//            ],
-//          ),
             ),
         child: Container(
           child: Padding(

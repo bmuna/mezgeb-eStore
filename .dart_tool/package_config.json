@@ -3,19 +3,19 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-6.0.0",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-1.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.2"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/analyzer-0.39.14",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/analyzer-0.39.2+1",
       "packageUri": "lib/",
-      "languageVersion": "2.6"
+      "languageVersion": "2.2"
     },
     {
       "name": "ansicolor",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/ansicolor-1.0.2",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/ansicolor-1.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
@@ -51,61 +51,61 @@
     },
     {
       "name": "build",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/build-1.3.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.7"
-    },
-    {
-      "name": "build_config",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/build_config-0.4.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.6"
-    },
-    {
-      "name": "build_daemon",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/build_daemon-2.1.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.6"
-    },
-    {
-      "name": "build_resolvers",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/build_resolvers-1.3.11",
-      "packageUri": "lib/",
-      "languageVersion": "2.7"
-    },
-    {
-      "name": "build_runner",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/build_runner-1.10.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.6"
-    },
-    {
-      "name": "build_runner_core",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/build_runner_core-6.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.7"
-    },
-    {
-      "name": "built_collection",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/built_collection-4.3.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.6"
-    },
-    {
-      "name": "built_value",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/built_value-7.1.0",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/build-1.2.2",
       "packageUri": "lib/",
       "languageVersion": "2.3"
     },
     {
-      "name": "cached_network_image",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image-2.2.0+1",
+      "name": "build_config",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/build_config-0.4.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
+      "name": "build_daemon",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/build_daemon-2.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
+      "name": "build_resolvers",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/build_resolvers-1.3.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
+      "name": "build_runner",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/build_runner-1.7.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
+      "name": "build_runner_core",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/build_runner_core-4.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
+      "name": "built_collection",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/built_collection-4.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "built_value",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/built_value-6.7.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "cached_network_image",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image-2.0.0-rc",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "carousel_slider",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/carousel_slider-2.2.1",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/carousel_slider-3.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.6"
     },
@@ -122,40 +122,16 @@
       "languageVersion": "2.3"
     },
     {
-      "name": "cli_util",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/cli_util-0.1.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
-      "name": "clock",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
       "name": "cloud_firestore",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.13.7",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.12.11",
       "packageUri": "lib/",
       "languageVersion": "2.0"
-    },
-    {
-      "name": "cloud_firestore_platform_interface",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_platform_interface-1.1.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
-      "name": "cloud_firestore_web",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_web-0.1.1+2",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
     },
     {
       "name": "code_builder",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/code_builder-3.5.0",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/code_builder-3.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.0"
     },
     {
       "name": "collection",
@@ -165,45 +141,27 @@
     },
     {
       "name": "connection_status_bar",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connection_status_bar-1.1.4",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connection_status_bar-1.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
       "name": "connectivity",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity-0.4.9+5",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity-0.4.4+1",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "connectivity_for_web",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_for_web-0.3.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.6"
-    },
-    {
-      "name": "connectivity_macos",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_macos-0.1.0+3",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "connectivity_platform_interface",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_platform_interface-1.0.6",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.0"
     },
     {
       "name": "connectivity_widget",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_widget-0.1.5",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_widget-0.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.2"
     },
     {
       "name": "connectivity_wrapper",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_wrapper-1.0.4",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_wrapper-1.0.2",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.1"
     },
     {
       "name": "console_log_handler",
@@ -216,6 +174,12 @@
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/convert-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "1.17"
+    },
+    {
+      "name": "cookie_jar",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/cookie_jar-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "1.20"
     },
     {
       "name": "crypto",
@@ -237,9 +201,9 @@
     },
     {
       "name": "dart_style",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/dart_style-1.3.6",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/dart_style-1.3.3",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.3"
     },
     {
       "name": "day_night_switch",
@@ -248,68 +212,32 @@
       "languageVersion": "2.1"
     },
     {
-      "name": "extra_pedantic",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/extra_pedantic-1.2.0",
+      "name": "dio",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/dio-2.2.2",
       "packageUri": "lib/",
-      "languageVersion": "2.2"
-    },
-    {
-      "name": "file",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/file-5.2.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.2"
-    },
-    {
-      "name": "firebase",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase-7.3.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "1.9"
     },
     {
       "name": "firebase_auth",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.16.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
-      "name": "firebase_auth_platform_interface",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_platform_interface-1.1.8",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
-      "name": "firebase_auth_web",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-0.1.3+1",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
     {
       "name": "firebase_core",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.5",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
-      "name": "firebase_core_platform_interface",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-1.0.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
-      "name": "firebase_core_web",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.1.1+2",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.0+9",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
     {
       "name": "firebase_database",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database-3.1.6",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database-3.0.9",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
     {
       "name": "firebase_storage",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-3.1.1",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-3.0.10",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
@@ -327,9 +255,9 @@
     },
     {
       "name": "flutter_cache_manager",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_cache_manager-1.4.1",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_cache_manager-1.1.3",
       "packageUri": "lib/",
-      "languageVersion": "2.6"
+      "languageVersion": "2.0"
     },
     {
       "name": "flutter_cupertino_localizations",
@@ -345,39 +273,27 @@
     },
     {
       "name": "flutter_mobx",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_mobx-1.1.0+2",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_mobx-0.3.4+3",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.2"
     },
     {
       "name": "flutter_offline",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_offline-0.3.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "flutter_plugin_android_lifecycle",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.8",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_offline-0.2.4+1",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
       "name": "flutter_spinkit",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_spinkit-4.1.2+1",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_spinkit-4.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.5"
+      "languageVersion": "2.1"
     },
     {
       "name": "flutter_test",
       "rootUri": "file:///E:/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "2.2"
-    },
-    {
-      "name": "flutter_web_plugins",
-      "rootUri": "file:///E:/flutter/packages/flutter_web_plugins",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
     },
     {
       "name": "font_awesome_flutter",
@@ -387,15 +303,15 @@
     },
     {
       "name": "geoflutterfire",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/geoflutterfire-2.1.0",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/geoflutterfire-2.0.3+5",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
     {
       "name": "geopoint",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/geopoint-0.7.1",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/geopoint-0.4.1",
       "packageUri": "lib/",
-      "languageVersion": "2.3"
+      "languageVersion": "2.0"
     },
     {
       "name": "glob",
@@ -405,15 +321,9 @@
     },
     {
       "name": "google_maps_flutter",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter-0.5.30",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter-0.5.21+14",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "google_maps_flutter_platform_interface",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter_platform_interface-1.0.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.3"
+      "languageVersion": "2.0"
     },
     {
       "name": "graphs",
@@ -429,9 +339,9 @@
     },
     {
       "name": "http",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.2",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.0+2",
       "packageUri": "lib/",
-      "languageVersion": "2.4"
+      "languageVersion": "2.0"
     },
     {
       "name": "http_multi_server",
@@ -453,7 +363,7 @@
     },
     {
       "name": "image_picker",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.3+1",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.2+2",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
@@ -477,9 +387,9 @@
     },
     {
       "name": "json_annotation",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-3.1.0",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-3.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.3"
     },
     {
       "name": "latlong",
@@ -489,21 +399,9 @@
     },
     {
       "name": "location",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/location-3.0.2",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/location-2.4.0",
       "packageUri": "lib/",
       "languageVersion": "2.0"
-    },
-    {
-      "name": "location_platform_interface",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/location_platform_interface-1.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.4"
-    },
-    {
-      "name": "location_web",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/location_web-1.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
     },
     {
       "name": "logging",
@@ -531,27 +429,21 @@
     },
     {
       "name": "mobx",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/mobx-1.2.1+2",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/mobx-0.3.10",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.2"
     },
     {
       "name": "mobx_codegen",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/mobx_codegen-1.1.0+1",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/mobx_codegen-0.3.11",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.2"
     },
     {
       "name": "modal_progress_hud",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/modal_progress_hud-0.1.3",
       "packageUri": "lib/",
       "languageVersion": "1.20"
-    },
-    {
-      "name": "nested",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/nested-0.0.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.2"
     },
     {
       "name": "node_interop",
@@ -573,9 +465,15 @@
     },
     {
       "name": "package_config",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/package_config-1.9.3",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/package_config-1.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "package_resolver",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/package_resolver-1.0.10",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
     },
     {
       "name": "path",
@@ -585,31 +483,13 @@
     },
     {
       "name": "path_provider",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.11",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.4.4",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "path_provider_linux",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-0.0.1+2",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "path_provider_macos",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-0.0.4+3",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "path_provider_platform_interface",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-1.0.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.0"
     },
     {
       "name": "pedantic",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.9.0",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.5.0",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
@@ -626,28 +506,16 @@
       "languageVersion": "1.24"
     },
     {
-      "name": "plugin_platform_interface",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
       "name": "pool",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/pool-1.4.0",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
     {
-      "name": "process",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/process-3.0.13",
+      "name": "provider",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/provider-3.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.0"
-    },
-    {
-      "name": "provider",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/provider-4.3.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.7"
     },
     {
       "name": "pub_semver",
@@ -675,39 +543,15 @@
     },
     {
       "name": "rxdart",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.23.1",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.22.6",
       "packageUri": "lib/",
-      "languageVersion": "2.6"
+      "languageVersion": "2.0"
     },
     {
       "name": "shared_preferences",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.8",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.3+5",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "shared_preferences_linux",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_linux-0.0.2+1",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "shared_preferences_macos",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-0.0.1+10",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "shared_preferences_platform_interface",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_platform_interface-1.0.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "shared_preferences_web",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-0.1.2+7",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.0"
     },
     {
       "name": "shelf",
@@ -718,12 +562,6 @@
     {
       "name": "shelf_web_socket",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/shelf_web_socket-0.2.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
-      "name": "simple_connectivity",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/simple_connectivity-0.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
@@ -741,9 +579,9 @@
     },
     {
       "name": "source_gen",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/source_gen-0.9.6",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/source_gen-0.9.4+6",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.3"
     },
     {
       "name": "source_span",
@@ -753,15 +591,9 @@
     },
     {
       "name": "sqflite",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-1.3.1",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-1.1.6+5",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
-    },
-    {
-      "name": "sqflite_common",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite_common-1.0.2+1",
-      "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.1"
     },
     {
       "name": "stack_trace",
@@ -783,9 +615,9 @@
     },
     {
       "name": "stream_transform",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/stream_transform-1.2.0",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/stream_transform-0.0.19",
       "packageUri": "lib/",
-      "languageVersion": "2.6"
+      "languageVersion": "2.2"
     },
     {
       "name": "string_scanner",
@@ -795,9 +627,9 @@
     },
     {
       "name": "synchronized",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/synchronized-2.2.0+2",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/synchronized-2.1.0+2",
       "packageUri": "lib/",
-      "languageVersion": "2.8"
+      "languageVersion": "2.1"
     },
     {
       "name": "term_glyph",
@@ -854,12 +686,6 @@
       "languageVersion": "2.0"
     },
     {
-      "name": "xdg_directories",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.3"
-    },
-    {
       "name": "xml",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/xml-3.6.1",
       "packageUri": "lib/",
@@ -867,18 +693,18 @@
     },
     {
       "name": "yaml",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/yaml-2.2.1",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/yaml-2.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.4"
+      "languageVersion": "2.0"
     },
     {
       "name": "mezgebestore",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.6"
     }
   ],
-  "generated": "2020-10-26T12:49:12.157001Z",
+  "generated": "2021-08-27T21:33:31.873684Z",
   "generator": "pub",
   "generatorVersion": "2.8.4"
 }

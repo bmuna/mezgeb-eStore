@@ -246,6 +246,7 @@ class _DetailState extends State<Detail> {
                   Builder(builder: (context) {
                     height = MediaQuery.of(context).size.height;
                     width = MediaQuery.of(context).size.width;
+
                     return CarouselSlider(
                       options: CarouselOptions(
                           enableInfiniteScroll: false,
