@@ -43,7 +43,7 @@ Step 3:
   
 # Screenshot
 
-<img src="https://user-images.githubusercontent.com/38354323/173315883-c51635f3-f67a-4b8e-b874-3f6e96fc3c71.jpg" width="100" height="100">
+<img src="https://user-images.githubusercontent.com/38354323/173315883-c51635f3-f67a-4b8e-b874-3f6e96fc3c71.jpg" width="300" height="400">
 
 ![photo_2022-06-13_11-31-13](https://user-images.githubusercontent.com/38354323/173315883-c51635f3-f67a-4b8e-b874-3f6e96fc3c71.jpg)
 ![photo_2022-06-13_11-31-42](https://user-images.githubusercontent.com/38354323/173315899-52337aa3-e565-4f33-abde-671d65f1b4e0.jpg)
