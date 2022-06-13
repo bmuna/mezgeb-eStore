@@ -116,5 +116,14 @@ Step 3:
 
   </tr>
  </table>
+ 
+   <table>
+  <tr>
+    <td>Home</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/38354323/173315930-682b16eb-2666-4abc-89b3-81e51029a246.jpg" width=270 height=480></td>
+  </tr>
+ </table>
 
 
