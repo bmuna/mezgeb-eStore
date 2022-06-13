@@ -43,8 +43,10 @@ Step 3:
   
 # Screenshot
 
+<p float="left">
 <img src="https://user-images.githubusercontent.com/38354323/173315883-c51635f3-f67a-4b8e-b874-3f6e96fc3c71.jpg" width="300" height="600">
 <img src="https://user-images.githubusercontent.com/38354323/173315899-52337aa3-e565-4f33-abde-671d65f1b4e0.jpg" width="300" height="600">
+</p>  
 <img src="https://user-images.githubusercontent.com/38354323/173315906-76f1c24f-4a15-4632-bc12-6232d6d6558b.jpg" width="300" height="600">
 <img src="https://user-images.githubusercontent.com/38354323/173315908-1a292acb-89ab-40de-ac81-a63f02f5d231.jpg" width="300" height="600">
 <img src="https://user-images.githubusercontent.com/38354323/173315909-3e07df4a-2d5f-470c-a4ab-d74a12858275.jpg" width="300" height="600">
