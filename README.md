@@ -43,7 +43,7 @@ Step 3:
   
 # Screenshot
 
-<p style="float:left; padding-right:100px">
+<!-- <p style="float:left; padding-right:100px">
 <img src="https://user-images.githubusercontent.com/38354323/173315883-c51635f3-f67a-4b8e-b874-3f6e96fc3c71.jpg" width="300" height="600">
 <img src="https://user-images.githubusercontent.com/38354323/173315899-52337aa3-e565-4f33-abde-671d65f1b4e0.jpg" width="300" height="600">
 </p>  
@@ -58,5 +58,18 @@ Step 3:
 <img src="https://user-images.githubusercontent.com/38354323/173315925-fd36aaa8-d443-4b66-986e-d4106dd2b6a6.jpg" width="300" height="600">
 <img src="https://user-images.githubusercontent.com/38354323/173315928-d0666f92-5309-4d76-a42f-d1e0995003c6.jpg" width="300" height="600">
 <img src="https://user-images.githubusercontent.com/38354323/173315930-682b16eb-2666-4abc-89b3-81e51029a246.jpg" width="300" height="600">
-
+ -->
+ 
+ <table>
+  <tr>
+    <td>First Screen Page</td>
+     <td>Holiday Mention</td>
+     <td>Present day in purple and selected day in pink</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/38354323/173315883-c51635f3-f67a-4b8e-b874-3f6e96fc3c71.jpg" width=270 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/38354323/173315899-52337aa3-e565-4f33-abde-671d65f1b4e0.jpg" width=270 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/38354323/173315906-76f1c24f-4a15-4632-bc12-6232d6d6558b.jpg" width=270 height=480></td>
+  </tr>
+ </table>
 
