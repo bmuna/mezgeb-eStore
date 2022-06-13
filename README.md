@@ -106,6 +106,7 @@ Step 3:
     <td>Cart detail</td>
      <td>Cart</td>
      <td>Login/</td>
+     <td>Home /</td>
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/38354323/173315922-ddf230fb-ddaa-4d9a-aa30-64be8e8abab0.jpg" width=270 height=480></td>
