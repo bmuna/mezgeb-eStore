@@ -43,7 +43,7 @@ Step 3:
   
 # Screenshot
 
-<p float="left" style="margin: 30px;">
+<p style="float:left; padding-right:10px">
 <img src="https://user-images.githubusercontent.com/38354323/173315883-c51635f3-f67a-4b8e-b874-3f6e96fc3c71.jpg" width="300" height="600">
 <img src="https://user-images.githubusercontent.com/38354323/173315899-52337aa3-e565-4f33-abde-671d65f1b4e0.jpg" width="300" height="600">
 </p>  
