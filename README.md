@@ -52,6 +52,7 @@ Step 3:
 <img src="https://user-images.githubusercontent.com/38354323/173315909-3e07df4a-2d5f-470c-a4ab-d74a12858275.jpg" width="300" height="600">
 <img src="https://user-images.githubusercontent.com/38354323/173315913-28fdcea1-bb10-4f1b-8aaa-afbc8e72f390.jpg" width="300" height="600">
 <img src="https://user-images.githubusercontent.com/38354323/173315917-10a7618e-69a8-4db7-b831-b38ac1760094.jpg" width="300" height="600">
+
 <img src="https://user-images.githubusercontent.com/38354323/173315917-10a7618e-69a8-4db7-b831-b38ac1760094.jpg" width="300" height="600">
 <img src="https://user-images.githubusercontent.com/38354323/173315919-a750815d-ad3f-4ff8-a313-4e644b9bfee3.jpg" width="300" height="600">
 <img src="https://user-images.githubusercontent.com/38354323/173315922-ddf230fb-ddaa-4d9a-aa30-64be8e8abab0.jpg" width="300" height="600">
@@ -75,9 +76,9 @@ Step 3:
  
   <table>
   <tr>
-    <td>Shop</td>
-     <td>Home</td>
-     <td>Shipping</td>
+    <td>Profile</td>
+     <td>My order</td>
+     <td>Cart</td>
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/38354323/173315908-1a292acb-89ab-40de-ac81-a63f02f5d231.jpg" width=270 height=480></td>
@@ -85,4 +86,18 @@ Step 3:
     <td><img src="https://user-images.githubusercontent.com/38354323/173315913-28fdcea1-bb10-4f1b-8aaa-afbc8e72f390.jpg" width=270 height=480></td>
   </tr>
  </table>
+ 
+   <table>
+  <tr>
+    <td>Profile</td>
+     <td>My order</td>
+     <td>Cart</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/38354323/173315917-10a7618e-69a8-4db7-b831-b38ac1760094.jpg" width=270 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/38354323/173315919-a750815d-ad3f-4ff8-a313-4e644b9bfee3.jpg" width=270 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/38354323/173315906-76f1c24f-4a15-4632-bc12-6232d6d6558b.jpg" width=270 height=480></td>
+  </tr>
+ </table>
+
 
