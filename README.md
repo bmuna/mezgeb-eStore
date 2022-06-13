@@ -55,6 +55,7 @@ Step 3:
 
 <img src="https://user-images.githubusercontent.com/38354323/173315917-10a7618e-69a8-4db7-b831-b38ac1760094.jpg" width="300" height="600">
 <img src="https://user-images.githubusercontent.com/38354323/173315919-a750815d-ad3f-4ff8-a313-4e644b9bfee3.jpg" width="300" height="600">
+
 <img src="https://user-images.githubusercontent.com/38354323/173315922-ddf230fb-ddaa-4d9a-aa30-64be8e8abab0.jpg" width="300" height="600">
 <img src="https://user-images.githubusercontent.com/38354323/173315925-fd36aaa8-d443-4b66-986e-d4106dd2b6a6.jpg" width="300" height="600">
 <img src="https://user-images.githubusercontent.com/38354323/173315928-d0666f92-5309-4d76-a42f-d1e0995003c6.jpg" width="300" height="600">
@@ -87,16 +88,29 @@ Step 3:
   </tr>
  </table>
  
-   <table>
+  <table>
   <tr>
-    <td>Profile</td>
-     <td>My order</td>
-     <td>Cart</td>
+    <td>Shipping history</td>
+     <td>New shipping</td>
+     <td>No shipping address</td>
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/38354323/173315917-10a7618e-69a8-4db7-b831-b38ac1760094.jpg" width=270 height=480></td>
     <td><img src="https://user-images.githubusercontent.com/38354323/173315919-a750815d-ad3f-4ff8-a313-4e644b9bfee3.jpg" width=270 height=480></td>
     <td><img src="https://user-images.githubusercontent.com/38354323/173315906-76f1c24f-4a15-4632-bc12-6232d6d6558b.jpg" width=270 height=480></td>
+  </tr>
+ </table>
+ 
+  <table>
+  <tr>
+    <td>Shipping history</td>
+     <td>New shipping</td>
+     <td>No shipping address</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/38354323/173315922-ddf230fb-ddaa-4d9a-aa30-64be8e8abab0.jpg" width=270 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/38354323/173315925-fd36aaa8-d443-4b66-986e-d4106dd2b6a6.jpg" width=270 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/38354323/173315928-d0666f92-5309-4d76-a42f-d1e0995003c6.jpg" width=270 height=480></td>
   </tr>
  </table>
 
