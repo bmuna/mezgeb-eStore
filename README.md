@@ -43,7 +43,9 @@ Step 3:
   
 # Screenshot
 
-![photo_2022-06-13_11-31-13](https://user-images.githubusercontent.com/38354323/173315883-c51635f3-f67a-4b8e-b874-3f6e96fc3c71.jpg | width=100)
+<img src="[https://your-image-url.type](https://user-images.githubusercontent.com/38354323/173315883-c51635f3-f67a-4b8e-b874-3f6e96fc3c71.jpg)" width="100" height="100">
+
+![photo_2022-06-13_11-31-13](https://user-images.githubusercontent.com/38354323/173315883-c51635f3-f67a-4b8e-b874-3f6e96fc3c71.jpg)
 ![photo_2022-06-13_11-31-42](https://user-images.githubusercontent.com/38354323/173315899-52337aa3-e565-4f33-abde-671d65f1b4e0.jpg)
 ![photo_2022-06-13_11-31-56](https://user-images.githubusercontent.com/38354323/173315903-36f9d964-4c6e-4959-8eb3-191a05ab2242.jpg)
 ![photo_2022-06-13_11-32-02](https://user-images.githubusercontent.com/38354323/173315906-76f1c24f-4a15-4632-bc12-6232d6d6558b.jpg)
