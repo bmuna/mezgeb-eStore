@@ -106,13 +106,11 @@ Step 3:
     <td>Cart detail</td>
      <td>Cart</td>
      <td>Login</td>
-     <td>Home</td>
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/38354323/173315922-ddf230fb-ddaa-4d9a-aa30-64be8e8abab0.jpg" width=270 height=480></td>
     <td><img src="https://user-images.githubusercontent.com/38354323/173315925-fd36aaa8-d443-4b66-986e-d4106dd2b6a6.jpg" width=270 height=480></td>
     <td><img src="https://user-images.githubusercontent.com/38354323/173315928-d0666f92-5309-4d76-a42f-d1e0995003c6.jpg" width=270 height=480></td>
-    <td><img src="https://user-images.githubusercontent.com/38354323/173315930-682b16eb-2666-4abc-89b3-81e51029a246.jpg" width=270 height=480></td>
 
   </tr>
  </table>
