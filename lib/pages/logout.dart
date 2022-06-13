@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'file:///C:/Users/Munation/Documents/flutter_project/mezgeb_estore/lib/widgets/main_button.dart';
 import 'package:mezgebestore/pages/home.dart';
 import 'package:mezgebestore/stores/login_store.dart';
 import 'package:provider/provider.dart';

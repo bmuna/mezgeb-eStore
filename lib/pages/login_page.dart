@@ -6,7 +6,6 @@ import 'package:mezgebestore/language/AppLanguage.dart';
 import 'package:mezgebestore/language/app_localization.dart';
 import 'package:mezgebestore/stores/size_config.dart';
 import 'package:mezgebestore/widgets/main_button.dart';
-import 'file:///C:/Users/Munation/Documents/flutter_project/mezgeb_estore/lib/widgets/register_button.dart';
 import 'package:provider/provider.dart';
 import 'package:mezgebestore/stores/login_store.dart';
 import 'package:mezgebestore/widgets/loader_hud.dart';

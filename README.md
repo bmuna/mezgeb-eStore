@@ -1,18 +1,46 @@
-# mezgebestore
+# mezgebestore-Intro
 
-A new Flutter application.
+This application demonstrates fully functional flutter ecommerce application.
 
-## Getting Started
+# Technologies Used:
 
-This project is a starting point for a Flutter application.
+- Flutter, Firebase/Firestore
 
-A few resources to get you started if this is your first Flutter project:
+# Screens it contains:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Onboarding
+- Login/signup
+- Otp verifcation
+- home page
+- shop with category
+- product-detail
+- cart page
+- Shipping
+- user order page/history
+- profile/ edit profile
+- address shipping
+- payment
+- setting
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# mezgeb-eStore" 
-"# mezgeb-eStore" 
+# Folder Structure and Files:
+
+- store for redux store, types for interface type, respective reducers and actions.
+- components for all the components.
+- utils is utilities for filters.
+
+# How to Use
+
+Step 1:
+
+- Download or clone this repo by using the link below:
+  https://github.com/bmuna/mezgeb-eStore.git
+
+Step 2:
+
+- Go to project root and execute the following command in console to get the required dependencies:
+  flutter pub get
+
+Step 3:
+
+- run the application
+  flutter run
