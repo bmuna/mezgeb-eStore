@@ -22,12 +22,6 @@ This application demonstrates fully functional flutter ecommerce application.
 - payment
 - setting
 
-# Folder Structure and Files:
-
-- store for redux store, types for interface type, respective reducers and actions.
-- components for all the components.
-- utils is utilities for filters.
-
 # How to Use
 
 Step 1:
@@ -38,9 +32,9 @@ Step 1:
 Step 2:
 
 - Go to project root and execute the following command in console to get the required dependencies:
-  flutter pub get
+  ### flutter pub get
 
 Step 3:
 
 - run the application
-  flutter run
+  ### flutter run
