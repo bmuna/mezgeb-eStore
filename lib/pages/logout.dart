@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mezgebestore/pages/home.dart';
 import 'package:mezgebestore/stores/login_store.dart';
+import 'package:mezgebestore/widgets/main_button.dart';
 import 'package:provider/provider.dart';
 
 class LogOut extends StatefulWidget {

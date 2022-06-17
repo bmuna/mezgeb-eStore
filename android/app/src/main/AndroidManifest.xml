@@ -12,7 +12,7 @@
         android:label="mezgebestore"
         android:icon="@mipmap/ic_launcher">
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAfeI9ecWg3dDrjLlndzTurdBTkN_D8vHk"/>
+            android:value="your_api_key"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

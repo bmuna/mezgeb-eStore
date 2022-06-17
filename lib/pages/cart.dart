@@ -7,10 +7,10 @@ import 'package:intl/intl.dart';
 import 'package:mezgebestore/language/AppLanguage.dart';
 import 'package:mezgebestore/language/app_localization.dart';
 import 'package:mezgebestore/pages/payment.dart';
-import 'file:///C:/Users/Munation/Documents/flutter_project/mezgeb_estore/lib/widgets/main_button.dart';
 import 'package:mezgebestore/stores/cart_logic.dart';
 import 'package:mezgebestore/stores/size_config.dart';
 import 'package:mezgebestore/widgets/cart_card.dart';
+import 'package:mezgebestore/widgets/main_button.dart';
 import 'package:provider/provider.dart';
 
 class Cart extends StatelessWidget {

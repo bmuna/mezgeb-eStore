@@ -10,12 +10,12 @@ import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
 import 'package:mezgebestore/language/AppLanguage.dart';
 import 'package:mezgebestore/language/app_localization.dart';
-import 'file:///C:/Users/Munation/Documents/flutter_project/mezgeb_estore/lib/widgets/main_button.dart';
 import 'package:mezgebestore/models/check_out.dart';
 import 'package:mezgebestore/pages/navbar_controller.dart';
 import 'package:mezgebestore/pages/splash_control.dart';
 import 'package:mezgebestore/stores/cart_logic.dart';
 import 'package:mezgebestore/stores/size_config.dart';
+import 'package:mezgebestore/widgets/main_button.dart';
 import 'package:provider/provider.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 

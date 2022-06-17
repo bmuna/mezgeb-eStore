@@ -7,7 +7,6 @@ import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mezgebestore/language/AppLanguage.dart';
 import 'package:mezgebestore/language/app_localization.dart';
-import 'file:///C:/Users/Munation/Documents/flutter_project/mezgeb_estore/lib/widgets/main_button.dart';
 import 'package:mezgebestore/pages/add_shipping_address.dart';
 import 'package:mezgebestore/pages/payment.dart';
 import 'package:mezgebestore/stores/business_name.dart';

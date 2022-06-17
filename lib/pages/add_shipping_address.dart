@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:typed_data';
 
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -7,20 +6,17 @@ import 'package:connectivity_wrapper/connectivity_wrapper.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:geoflutterfire/geoflutterfire.dart';
 import 'package:location/location.dart';
 import 'package:mezgebestore/constant.dart';
-import 'file:///C:/Users/Munation/Documents/flutter_project/mezgeb_estore/lib/widgets/main_button.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:mezgebestore/language/AppLanguage.dart';
 import 'package:mezgebestore/language/app_localization.dart';
 import 'package:mezgebestore/models/shipping_out.dart';
-import 'package:mezgebestore/pages/maps.dart';
 import 'package:mezgebestore/pages/shipping.dart';
 import 'package:mezgebestore/stores/business_name.dart';
-import 'package:mezgebestore/stores/shipping_logic.dart';
 import 'package:mezgebestore/stores/size_config.dart';
+import 'package:mezgebestore/widgets/main_button.dart';
 import 'package:provider/provider.dart';
 
 class AddShippingAddress extends StatefulWidget {

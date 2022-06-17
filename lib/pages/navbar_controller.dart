@@ -1,6 +1,5 @@
 import 'package:connectivity_wrapper/connectivity_wrapper.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_offline/flutter_offline.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mezgebestore/language/AppLanguage.dart';
 import 'package:mezgebestore/language/app_localization.dart';
@@ -105,17 +104,12 @@ class BottomNavigationBarControllerState
                 setState(() => widget.selectedIndex = index);
               },
               currentIndex: selectedIndex,
+              selectedFontSize: 2 * SizeConfig.textMultiplier,
               items: <BottomNavigationBarItem>[
                 BottomNavigationBarItem(
                   icon: Icon(
                     FontAwesomeIcons.home,
                     size: 2.5 * SizeConfig.heightMultiplier,
-                  ),
-                  title: Text(
-                    AppLocalizations.of(context).translate('home'),
-                    style: TextStyle(
-                      fontSize: 2 * SizeConfig.textMultiplier,
-                    ),
                   ),
                 ),
                 BottomNavigationBarItem(
@@ -123,20 +117,10 @@ class BottomNavigationBarControllerState
                     FontAwesomeIcons.store,
                     size: 2.5 * SizeConfig.heightMultiplier,
                   ),
-                  title: Text(
-                    AppLocalizations.of(context).translate('shop'),
-                    style: TextStyle(
-                      fontSize: 2 * SizeConfig.textMultiplier,
-                    ),
-                  ),
+                  label: AppLocalizations.of(context).translate('shop'),
                 ),
                 BottomNavigationBarItem(
-                    title: Text(
-                      AppLocalizations.of(context).translate('cart'),
-                      style: TextStyle(
-                        fontSize: 2 * SizeConfig.textMultiplier,
-                      ),
-                    ),
+                    label: AppLocalizations.of(context).translate('cart'),
                     icon: Stack(
                       overflow: Overflow.visible,
                       children: <Widget>[
@@ -172,12 +156,7 @@ class BottomNavigationBarControllerState
                     FontAwesomeIcons.user,
                     size: 2.5 * SizeConfig.heightMultiplier,
                   ),
-                  title: Text(
-                    AppLocalizations.of(context).translate('profile'),
-                    style: TextStyle(
-                      fontSize: 2 * SizeConfig.textMultiplier,
-                    ),
-                  ),
+                  label: AppLocalizations.of(context).translate('profile'),
                 ),
               ],
             ),
